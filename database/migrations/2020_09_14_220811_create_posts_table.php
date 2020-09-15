@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
                 $table->id();
                 $table->unsignedBigInteger('users_id');
                 $table->foreign('users_id')
-                    ->reference('id')
+                    ->references('id')
                     ->on('users');
 
                 $table->text('image_path');
