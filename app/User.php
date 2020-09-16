@@ -37,6 +37,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function posts() {
-      $this->hasMany('App\Post')
+      $this->hasMany('App\Post');
     }
 }
